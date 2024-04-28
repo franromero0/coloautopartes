@@ -1,0 +1,150 @@
+@media (max-width:600px){
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .container{
+            width: 100%;
+        }
+        .first-section{
+            .bg-filter{
+                h1{
+                    font-size: 2rem;
+                }
+                p{
+                    width: 80%;
+                    font-size: 1.4rem;
+                }
+                div{
+                    @include flex(column, center,flex-start, 1rem);
+                    a:nth-child(1n){
+                        padding: 0.5rem 2rem;
+                        font-size: 1rem;
+                    }
+                    a:nth-child(2n){
+                        text-align: center;
+                        padding: 0.5rem;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .recycle-section{
+            ul{
+                li{
+                    img{
+                        width: 100px;
+                    }
+                    p{
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .about-us{
+            div{
+                
+                h2{
+                    font-size:1.5rem;
+                    margin: 0 1.5rem;
+                }
+                img{
+                    width: 150px;
+                    margin: 2.5rem 1.5rem;
+                }
+            }
+        }
+        .about-us-banner{
+            .about-us-element{
+                div{  
+                    img{
+                        width: 120px;
+                    }
+                    p{
+                        font-weight: 400;     
+                    }
+                }
+            }
+        }
+        .services-section{
+            .services-bg{
+                .container{
+                    .services-title{
+                        
+                        h2{
+                            font-size: 1.5rem;
+                            max-width: 100%;
+                            margin-left: 1rem;
+                        }
+                        img{
+                            width: 150px;
+                        }
+                    }
+                    .services-order{
+                        article{
+                            flex-direction: column;
+                            width: 90%;   
+                            img{
+                                width: 150px;
+                                height: 150px;
+                                border-radius: 10px;
+                            }
+                            div{
+                                max-width: 80%;
+                                margin-top: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .location{
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                max-width: 80%;
+                font-size: 1rem;
+            }
+            iframe{
+                width: 90%;
+                height: 400px;
+            }
+        }
+        .banner-section{
+            .bg-filter{
+                .container{
+                        h3{
+                            margin-left: 0.5rem;
+                        }
+                        div{
+                            gap: 1rem;
+                            margin-left: 0.5rem;
+                            img{
+                                width: 150px;
+                            };
+                            ul{
+                                li{
+                                    font-size: 1.2rem;
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                        }
+                        h4{
+                            font-size: 1.5rem;
+                            margin-left: 0.5rem;
+                        }
+                }
+            }
+        }
+    }
+}

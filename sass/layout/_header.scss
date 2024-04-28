@@ -1,0 +1,53 @@
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56);
+    z-index: 999;
+    #boton-flotante {
+        display: none; /* Inicialmente oculto */
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        font-size: 4.5rem;
+        color: #25D366;
+        &:hover{
+            transform: scale(1.2);
+            color: #22aa54;
+            transition: all 0.3s ease
+        }
+    }
+    
+    nav{
+        @include flex(column, center, center, 0.5rem);
+        padding-top: 0.5rem;
+        a img{
+            width: 200px;
+        }
+        ul{
+            @include flex(row, center, center, 0rem);
+            list-style: none;
+            li{
+                padding: 0.5rem 0;      
+                a{
+                    text-decoration: none;
+                    color: map-get($font-general,fontcolor);
+                    text-transform: uppercase;
+                    padding: 0.5rem;
+                    font-weight: 500;
+                    &:hover{
+                        color: $white-color;
+                        transition: all 0.3s ease;
+                        }
+                }
+                &:hover{
+                    background-color: $brown-color;
+                    border-radius: 10px;
+                    transition: all 0.3s ease;
+                    }
+                    
+                }
+            }
+        }
+    }

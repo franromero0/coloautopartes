@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #282829;
+  font-style: normal; }
+
+body {
+  width: 100%; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; }
+
+header {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56);
+  z-index: 999; }
+  header #boton-flotante {
+    display: none;
+    /* Inicialmente oculto */
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 4.5rem;
+    color: #25D366; }
+    header #boton-flotante:hover {
+      transform: scale(1.2);
+      color: #22aa54;
+      transition: all 0.3s ease; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 0.5rem; }
+    header nav a img {
+      width: 200px; }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0rem;
+      list-style: none; }
+      header nav ul li {
+        padding: 0.5rem 0; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #282829;
+          text-transform: uppercase;
+          padding: 0.5rem;
+          font-weight: 500; }
+          header nav ul li a:hover {
+            color: white;
+            transition: all 0.3s ease; }
+        header nav ul li:hover {
+          background-color: #56423D;
+          border-radius: 10px;
+          transition: all 0.3s ease; }
+
+footer {
+  background-color: #56423D; }
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap; }
+    footer .container .footer-one {
+      width: 25%;
+      padding: 5rem 0; }
+      footer .container .footer-one img {
+        width: 200px; }
+      footer .container .footer-one p {
+        font-size: .9375rem;
+        width: 80%;
+        color: white;
+        font-weight: 300; }
+      footer .container .footer-one h4 {
+        font-size: .9375rem;
+        width: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 1rem 0; }
+      footer .container .footer-one ul {
+        list-style: none; }
+        footer .container .footer-one ul li, footer .container .footer-one ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: 100;
+          width: 100%;
+          margin-bottom: 0.5rem; }
+          footer .container .footer-one ul li:hover, footer .container .footer-one ul li a:hover {
+            color: black;
+            cursor: pointer; }
+          footer .container .footer-one ul li i, footer .container .footer-one ul li a i {
+            margin-right: 0.5rem; }
+  footer .signature {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    border-top: 1px solid #9A8884; }
+    footer .signature p {
+      color: #282829;
+      padding: 1rem;
+      font-size: 1rem; }
+      footer .signature p a {
+        color: #282829; }
+        footer .signature p a:hover {
+          color: white;
+          opacity: 0.1; }
+
+main .first-section {
+  top: 0;
+  z-index: 10;
+  background-image: url("../assets/img/first-section/foto-predio-extend.webp");
+  background-size: 120%;
+  height: 90vh;
+  width: 100%;
+  background-position: left center; }
+  main .first-section .bg-filter {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(154, 136, 132, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0; }
+    main .first-section .bg-filter h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-left: 5%; }
+      main .first-section .bg-filter h1 span {
+        color: #56423D;
+        font-weight: 800; }
+    main .first-section .bg-filter p {
+      font-size: 2rem;
+      width: 65%;
+      color: white;
+      font-weight: 300;
+      margin-bottom: 3rem;
+      margin-left: 5%; }
+    main .first-section .bg-filter div {
+      margin-left: 5%; }
+      main .first-section .bg-filter div a:nth-child(1n) {
+        background-color: #56423D;
+        color: white;
+        border: 1px solid #56423D;
+        padding: 1rem 7rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 70px;
+        font-size: 1.3rem;
+        font-weight: 600; }
+        main .first-section .bg-filter div a:nth-child(1n):hover {
+          background-color: transparent;
+          color: #56423D;
+          transition: all 0.3s ease; }
+      main .first-section .bg-filter div a:nth-child(2n) {
+        background-color: transparent;
+        border: 1px solid #56423D;
+        color: #56423D;
+        padding: 1rem 2.5rem; }
+        main .first-section .bg-filter div a:nth-child(2n):hover {
+          background-color: #56423D;
+          color: white;
+          transition: all 0.3s ease; }
+
+main .recycle-section {
+  background-color: #9A8884;
+  height: auto;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 5rem; }
+  main .recycle-section h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  main .recycle-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap; }
+    main .recycle-section ul li {
+      flex-basis: calc(33.33% - 20px);
+      text-align: center;
+      list-style: none;
+      margin-top: 3rem; }
+      main .recycle-section ul li img {
+        width: 150px;
+        background-color: white;
+        border-radius: 100px;
+        margin-bottom: 0.5rem; }
+      main .recycle-section ul li p {
+        text-transform: uppercase;
+        font-weight: 600; }
+
+main .about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: auto; }
+  main .about-us div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%; }
+    main .about-us div h2 {
+      text-transform: uppercase;
+      max-width: 9rem;
+      font-size: 2.5rem;
+      border-bottom: 1px solid #282829;
+      margin-top: 10rem; }
+    main .about-us div img {
+      width: 250px;
+      margin-top: 10rem; }
+  main .about-us .about-us-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 80%;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem; }
+    main .about-us .about-us-p div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      max-width: fit-content; }
+
+main .about-us-banner {
+  background-color: #FF5252; }
+  main .about-us-banner .about-us-element {
+    height: auto;
+    padding-bottom: 3rem;
+    padding-top: 13rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
+    main .about-us-banner .about-us-element div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0; }
+      main .about-us-banner .about-us-element div:nth-child(2n) {
+        translate: 0 -10rem;
+        width: 50%; }
+      main .about-us-banner .about-us-element div img {
+        width: 180px; }
+      main .about-us-banner .about-us-element div p {
+        width: 70%;
+        font-size: 1.3rem;
+        text-align: center;
+        color: white;
+        margin: 0;
+        font-weight: 500; }
+
+main .services-section {
+  background-image: url("../../../assets/img/services-section/services-bg.webp");
+  background-size: cover; }
+  main .services-section .services-bg {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 7rem; }
+    main .services-section .services-bg .container .services-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 5rem; }
+      main .services-section .services-bg .container .services-title h2 {
+        max-width: 60%;
+        font-size: 2.5rem;
+        padding-top: 4rem;
+        font-weight: 900;
+        margin-top: 5rem; }
+      main .services-section .services-bg .container .services-title .line {
+        display: block;
+        width: 200px;
+        height: 1px;
+        background-color: #282829;
+        margin-bottom: 3rem;
+        margin-top: 0.5rem; }
+      main .services-section .services-bg .container .services-title img {
+        width: 250px; }
+    main .services-section .services-bg .container .services-order {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem; }
+      main .services-section .services-bg .container .services-order article {
+        background-image: linear-gradient(to left, #9a8884, #887671, #77645f, #66534e);
+        width: 100%;
+        padding: 1.5rem 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        border-radius: 30px; }
+        main .services-section .services-bg .container .services-order article img {
+          width: 200px;
+          height: 200px;
+          border-radius: 60px; }
+          main .services-section .services-bg .container .services-order article img:hover {
+            border-radius: 20px;
+            transform: scale(1.1);
+            transition: all 0.3s ease; }
+        main .services-section .services-bg .container .services-order article div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0;
+          max-width: 40%;
+          margin: 0 auto; }
+          main .services-section .services-bg .container .services-order article div h3 {
+            font-size: 2.5rem;
+            text-align: center; }
+          main .services-section .services-bg .container .services-order article div p {
+            text-align: center;
+            font-size: 1.3rem; }
+
+.location {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; }
+  .location h2 {
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    text-transform: uppercase; }
+    .location h2 .fa-solid {
+      margin-right: 1rem; }
+  .location p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    max-width: 40%;
+    text-align: center; }
+  .location iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 40px;
+    border: 0;
+    margin-top: 3rem; }
+
+main .contact-section {
+  padding: 10rem 0;
+  background-color: #282829; }
+  main .contact-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; }
+    main .contact-section .container h2 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: white; }
+    main .contact-section .container .line {
+      display: block;
+      width: 100px;
+      height: 1px;
+      background-color: white;
+      margin-bottom: 3rem; }
+    main .contact-section .container a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none; }
+      main .contact-section .container a:hover {
+        transform: scale(1.1); }
+      main .contact-section .container a i {
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 1.5rem; }
+      main .contact-section .container a p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white; }
+        main .contact-section .container a p:nth-last-child(2) {
+          font-size: 1rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          color: white;
+          text-decoration: none; }
+        main .contact-section .container a p:nth-last-child(5) {
+          font-size: 1rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          color: white;
+          text-decoration: none; }
+        main .contact-section .container a p:nth-last-child(8) {
+          font-size: 1rem;
+          font-weight: 300;
+          text-transform: uppercase; }
+
+main .banner-section {
+  width: 100%;
+  background-image: url("../../../assets/img/banner.webp");
+  background-size: cover;
+  background-attachment: fixed; }
+  main .banner-section .bg-filter {
+    height: 100%;
+    width: 100%;
+    padding: 15em 0;
+    background-color: rgba(86, 66, 61, 0.795); }
+    main .banner-section .bg-filter .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1.5rem; }
+      main .banner-section .bg-filter .container h3 {
+        font-size: 2rem;
+        color: white;
+        font-weight: 800; }
+      main .banner-section .bg-filter .container div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem; }
+        main .banner-section .bg-filter .container div img {
+          width: 400px; }
+        main .banner-section .bg-filter .container div ul {
+          list-style: none; }
+          main .banner-section .bg-filter .container div ul li {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: white; }
+      main .banner-section .bg-filter .container .line {
+        display: block;
+        width: 100px;
+        height: 10px;
+        background-color: #FF0400; }
+      main .banner-section .bg-filter .container h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase; }
+
+@media (max-width: 1300px) {
+  header #boton-flotante {
+    font-size: 4rem; }
+  main .first-section {
+    background-image: url("../../../assets/img/first-section/foto-predio.webp");
+    background-size: cover; }
+    main .first-section .bg-filter h1 {
+      font-size: 3rem; }
+    main .first-section .bg-filter p {
+      font-size: 1.7rem; }
+    main .first-section .bg-filter div a:nth-child(1n) {
+      padding: 1rem 3.5rem; }
+    main .first-section .bg-filter div a:nth-child(2n) {
+      padding: 1rem 1rem; }
+  main .recycle-section h2 {
+    font-size: 1.5rem; }
+  main .recycle-section ul {
+    gap: 3rem; }
+    main .recycle-section ul li {
+      flex-basis: calc(50%, 20px); }
+      main .recycle-section ul li img {
+        width: 150px; }
+  main .about-us div h2 {
+    font-size: 2rem; }
+  main .about-us div img {
+    width: 200px; }
+  main .about-us .about-us-p {
+    font-size: 1rem; }
+    main .about-us .about-us-p div {
+      gap: 2rem; }
+  main .about-us-banner .about-us-element div img {
+    width: 150px; }
+  main .about-us-banner .about-us-element div p {
+    font-size: 1rem;
+    width: 100%; }
+  main .services-section .services-bg .container .services-title h2 {
+    font-size: 2rem;
+    max-width: 80%; }
+  main .services-section .services-bg .container .services-title img {
+    width: 200px; }
+  main .services-section .services-bg .container .services-order article div h3 {
+    font-size: 2rem; }
+  main .services-section .services-bg .container .services-order article div p {
+    font-size: 1rem; }
+  main .location h2 {
+    font-size: 2rem; }
+  main .location p {
+    font-size: 1rem; }
+  main .contact-section .container h2 {
+    font-size: 2rem; }
+  main .contact-section .container a i {
+    font-size: 1rem; }
+  main .contact-section .container a p {
+    font-size: 1rem; }
+  main .banner-section .bg-filter .container h3 {
+    font-size: 1.5rem; }
+  main .banner-section .bg-filter .container div img {
+    width: 200px; }
+  main .banner-section .bg-filter .container div ul li {
+    font-size: 1.3rem; }
+  footer {
+    padding: 3rem 0; }
+    footer .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem; }
+      footer .container .footer-one {
+        width: 60%;
+        padding: 0; }
+    footer .signature {
+      margin-top: 2rem; } }
+
+@media (max-width: 600px) {
+  header nav ul li a {
+    font-size: 0.5rem; }
+  main .container {
+    width: 100%; }
+  main .first-section .bg-filter h1 {
+    font-size: 2rem; }
+  main .first-section .bg-filter p {
+    width: 80%;
+    font-size: 1.4rem; }
+  main .first-section .bg-filter div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem; }
+    main .first-section .bg-filter div a:nth-child(1n) {
+      padding: 0.5rem 2rem;
+      font-size: 1rem; }
+    main .first-section .bg-filter div a:nth-child(2n) {
+      text-align: center;
+      padding: 0.5rem;
+      max-width: 100%; }
+  main .recycle-section ul li img {
+    width: 100px; }
+  main .recycle-section ul li p {
+    font-size: 1rem;
+    font-weight: 500; }
+  main .about-us div h2 {
+    font-size: 1.5rem;
+    margin: 0 1.5rem; }
+  main .about-us div img {
+    width: 150px;
+    margin: 2.5rem 1.5rem; }
+  main .about-us-banner .about-us-element div img {
+    width: 120px; }
+  main .about-us-banner .about-us-element div p {
+    font-weight: 400; }
+  main .services-section .services-bg .container .services-title h2 {
+    font-size: 1.5rem;
+    max-width: 100%;
+    margin-left: 1rem; }
+  main .services-section .services-bg .container .services-title img {
+    width: 150px; }
+  main .services-section .services-bg .container .services-order article {
+    flex-direction: column;
+    width: 90%; }
+    main .services-section .services-bg .container .services-order article img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px; }
+    main .services-section .services-bg .container .services-order article div {
+      max-width: 80%;
+      margin-top: 1.5rem; }
+  main .location h2 {
+    font-size: 2rem; }
+  main .location p {
+    max-width: 80%;
+    font-size: 1rem; }
+  main .location iframe {
+    width: 90%;
+    height: 400px; }
+  main .banner-section .bg-filter .container h3 {
+    margin-left: 0.5rem; }
+  main .banner-section .bg-filter .container div {
+    gap: 1rem;
+    margin-left: 0.5rem; }
+    main .banner-section .bg-filter .container div img {
+      width: 150px; }
+    main .banner-section .bg-filter .container div ul li {
+      font-size: 1.2rem;
+      margin-bottom: 1rem; }
+  main .banner-section .bg-filter .container h4 {
+    font-size: 1.5rem;
+    margin-left: 0.5rem; } }

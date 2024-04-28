@@ -1,0 +1,70 @@
+main{
+    .services-section{
+        background-image: url('../../../assets/img/services-section/services-bg.webp');
+        background-size: cover;
+        
+        .services-bg{
+            background-color: rgba(255, 255, 255, 0.9);
+            padding-bottom: 7rem;
+            .container{
+                .services-title{
+                    @include flex(row,space-between,center,0);
+                    margin-bottom: 5rem;
+                    h2{
+                        max-width: 60%;
+                        font-size: 2.5rem;
+                        padding-top: 4rem;       
+                        font-weight: 900;
+                        margin-top: 5rem;      
+                    }
+                    .line{
+                        display: block;
+                        width: 200px;
+                        height: 1px;
+                        background-color: $dark-color;
+                        margin-bottom: 3rem;
+                        margin-top: 0.5rem;    
+                    }
+                    
+                    img{
+                        width: 250px;
+                    }                      
+                }
+                .services-order{
+                    @include flex(column,center,center,2rem);
+                    article{                    
+                            background-image: linear-gradient(to left, #9a8884, #887671, #77645f, #66534e);
+                            width: 100%;
+                            padding: 1.5rem 1.5rem;
+                            @include flex(row,space-between,center,0);
+                            border-radius: 30px;
+                            img{
+                                width: 200px;
+                                height: 200px;
+                                border-radius: 60px;
+                                &:hover{
+                                    border-radius:20px;
+                                    transform: scale(1.1);
+                                    transition: all 0.3s ease
+                                }
+
+                            }
+                            div{
+                                @include flex(column, center,center,0);
+                                max-width:40%;
+                                margin: 0 auto;
+                                h3{
+                                    font-size: 2.5rem;
+                                    text-align: center;
+                                }
+                                p{
+                                    text-align: center;
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

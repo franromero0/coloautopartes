@@ -1,0 +1,15 @@
+@import "./utilities/variables";
+@import './utilities/mixins';
+@import "./base/general";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main/first-section";
+@import "./layout/main/recycle-section";
+@import "./layout/main/about-us";
+@import "./layout/main/services-section";
+@import "./layout/main/location";
+@import "./layout/main/contact-section";
+@import "./layout/main/banner-section";
+@import "./layout/mediaquery/media1400";
+@import "./layout/mediaquery/media768";
+@import "./layout/mediaquery/media425";

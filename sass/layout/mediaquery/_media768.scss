@@ -1,0 +1,164 @@
+@media (max-width:1300px){
+    header{
+        #boton-flotante{
+            font-size: 4rem;
+        }
+    }
+    main{
+  
+        .first-section{
+            background-image: url("../../../assets/img/first-section/foto-predio.webp");
+            background-size: cover;
+            .bg-filter{
+                
+                h1{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 1.7rem;
+                }
+                div{
+                    a:nth-child(1n){
+                        padding: 1rem 3.5rem;
+                    }
+                    a:nth-child(2n) {
+                        padding: 1rem 1rem;
+                    }
+                }
+            }
+        }
+        .recycle-section{
+            h2{
+                font-size: 1.5rem;
+            }
+            ul{
+                gap: 3rem;
+                li{
+                    flex-basis: calc(50%, 20px);
+                    img{
+                        width: 150px;
+                    }
+                }
+            }
+        }
+        .about-us{
+            div{
+                h2{
+                    font-size: 2rem;
+                }
+                img{
+                    width: 200px;
+                }
+            }
+            .about-us-p{
+                font-size: 1rem;
+                div{
+                    gap: 2rem;
+                }
+            }
+            
+        }
+        .about-us-banner{
+            .about-us-element{
+                div{
+                    img{
+                        width: 150px;
+                    }
+                    p{
+                        font-size: 1rem;
+                        width: 100%
+                    }
+                }
+            }
+        }
+        .services-section{
+            .services-bg{
+                .container{
+                    .services-title{
+                        h2{
+                            font-size: 2rem;
+                            max-width: 80%;
+                        }
+                        img{
+                            width: 200px;
+                        }
+                    }
+                    .services-order{
+                        article{
+                            div{
+                                h3{
+                                    font-size:2rem;
+                                    
+                                }
+                                p{
+                                    font-size: 1rem;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .location{
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            
+        }
+        .contact-section{
+            .container{
+                h2{
+                    font-size: 2rem;
+                }
+                a{
+                    i{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: 1rem;                   
+                    }
+                }
+                
+            }
+        }
+        .banner-section{
+            .bg-filter{
+                .container{
+                   
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                    div{
+                        img{
+                        width: 200px;
+                    };
+                        ul{
+                            li{
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+    footer{
+        padding: 3rem 0;
+        .container{
+            @include flex(column,center,flex-start,1rem);
+            .footer-one{
+                width: 60%;
+                padding: 0;
+            }
+        }
+        .signature{
+            margin-top: 2rem;
+        }
+    }
+}

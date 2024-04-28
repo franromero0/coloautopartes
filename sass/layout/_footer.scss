@@ -1,0 +1,69 @@
+footer{
+    background-color: #56423D;
+    .container{
+        @include flex(row,center,center,5rem);
+        flex-wrap: wrap;
+        .footer-one{
+            width: 25%;
+            padding: 5rem 0;
+            img{
+                width: 200px;
+            }
+            p{
+                font-size: .9375rem;
+                width: 80%;
+                color: $white-color;
+                font-weight: 300;
+            }
+            h4{
+                font-size: .9375rem;
+                width: 100%;
+                color: $white-color;
+                text-transform: uppercase;
+                font-weight: 300;
+                margin: 1rem 0;
+            }
+            ul{
+                list-style: none;
+                li, li a{
+                    color: $white-color;
+                    text-decoration: none;
+                    font-weight: 100;
+                    width: 100%;
+                    margin-bottom: 0.5rem;
+                    &:hover{
+                        color: black;
+                        cursor: pointer;
+                    }
+                    i{
+                        margin-right: 0.5rem;
+                        
+                        
+                    }
+
+                }
+            }
+
+        }
+    }
+    .signature{
+        width: 100%;
+        align-content: center;
+        text-align: center;
+        border-top: 1px solid $brown-light;
+        p{
+                color:$dark-color;
+                padding: 1rem;
+                font-size: 1rem;
+                a{
+                    color: $dark-color;
+                    &:hover{
+                        color: white;
+                        opacity: 0.1;
+                    }
+                }
+            }
+        
+        
+    }
+}
