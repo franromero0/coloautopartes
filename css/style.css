@@ -435,7 +435,7 @@ main .contact-section {
 
 main .banner-section {
   width: 100%;
-  background-image: url("../../../assets/img/banner.webp");
+  background-image: url("../assets/img/banner.webp");
   background-size: cover;
   background-attachment: fixed; }
   main .banner-section .bg-filter {
@@ -482,7 +482,7 @@ main .banner-section {
   header #boton-flotante {
     font-size: 4rem; }
   main .first-section {
-    background-image: url("../../../assets/img/first-section/foto-predio.webp");
+    background-image: url("../assets/img/first-section/foto-predio.webp");
     background-size: cover; }
     main .first-section .bg-filter h1 {
       font-size: 3rem; }
@@ -618,7 +618,7 @@ main .banner-section {
     margin-left: 0.5rem; }
   main .banner-section .bg-filter .container div {
     gap: 1rem;
-    margin-left: 0.5rem; }
+    margin: 0 1rem; }
     main .banner-section .bg-filter .container div img {
       width: 150px; }
     main .banner-section .bg-filter .container div ul li {
