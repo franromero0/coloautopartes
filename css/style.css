@@ -23,12 +23,12 @@ body {
   display: none; }
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0px;
   width: 100%;
   height: auto;
-  background-image: linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56);
-  z-index: 999; }
+  z-index: 999;
+  transition: 0.7s; }
   header #boton-flotante {
     display: none;
     /* Inicialmente oculto */
@@ -133,7 +133,7 @@ main .first-section {
   aspect-ratio: 16/9;
   background-image: url("../assets/img/first-section/foto-predio-extend.webp");
   background-size: 120%;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-position: left center; }
   main .first-section .bg-filter {
