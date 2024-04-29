@@ -19,6 +19,9 @@ body {
   margin: auto;
   overflow: hidden; }
 
+.desktop-hide {
+  display: none; }
+
 header {
   position: sticky;
   top: 0px;
@@ -127,6 +130,7 @@ footer {
 main .first-section {
   top: 0;
   z-index: 10;
+  aspect-ratio: 16/9;
   background-image: url("../assets/img/first-section/foto-predio-extend.webp");
   background-size: 120%;
   height: 90vh;
@@ -305,7 +309,7 @@ main .services-section {
         max-width: 60%;
         font-size: 2.5rem;
         padding-top: 4rem;
-        font-weight: 900;
+        font-weight: 700;
         margin-top: 5rem; }
       main .services-section .services-bg .container .services-title .line {
         display: block;
@@ -315,7 +319,9 @@ main .services-section {
         margin-bottom: 3rem;
         margin-top: 0.5rem; }
       main .services-section .services-bg .container .services-title img {
-        width: 250px; }
+        width: 250px;
+        margin-top: 5rem;
+        margin-right: 0.5rem; }
     main .services-section .services-bg .container .services-order {
       display: flex;
       flex-direction: column;
@@ -441,7 +447,7 @@ main .banner-section {
   main .banner-section .bg-filter {
     height: 100%;
     width: 100%;
-    padding: 15em 0;
+    padding: 15rem 0;
     background-color: rgba(86, 66, 61, 0.795); }
     main .banner-section .bg-filter .container {
       display: flex;
@@ -553,39 +559,124 @@ main .banner-section {
       margin-top: 2rem; } }
 
 @media (max-width: 600px) {
+  .mobile-hide {
+    display: none; }
   header nav ul li a {
     font-size: 0.5rem; }
-  main .container {
-    width: 100%; }
-  main .first-section .bg-filter h1 {
-    font-size: 2rem; }
-  main .first-section .bg-filter p {
-    width: 80%;
-    font-size: 1.4rem; }
-  main .first-section .bg-filter div {
+  header .desktop-hide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 1rem;
+    height: 100%;
+    background-image: linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56); }
+    header .desktop-hide img {
+      width: 150px; }
+    header .desktop-hide label i {
+      font-size: 2rem;
+      color: #56423D; }
+    header .desktop-hide ul {
+      display: flex;
+      align-content: center;
+      justify-content: space-evenly;
+      list-style: none; }
+  header .menu-hamburguesa {
+    display: none; }
+  header .menu-hamburguesa:checked + .ul-links {
+    height: calc(100vh - 90px);
+    padding-top: 3rem;
+    padding-bottom: 7rem; }
+  header .list-icon {
+    cursor: pointer; }
+  header .ul-links {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 97px;
+    left: 0;
+    height: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 1rem; }
-    main .first-section .bg-filter div a:nth-child(1n) {
-      padding: 0.5rem 2rem;
-      font-size: 1rem; }
-    main .first-section .bg-filter div a:nth-child(2n) {
+    overflow: hidden;
+    transition: all .3s;
+    list-style: none;
+    flex-wrap: nowrap;
+    background-color: rgba(255, 255, 255, 0.137);
+    backdrop-filter: blur(10px); }
+    header .ul-links li {
+      width: 100%;
+      height: 100%;
       text-align: center;
-      padding: 0.5rem;
-      max-width: 100%; }
-  main .recycle-section ul li img {
-    width: 100px; }
-  main .recycle-section ul li p {
-    font-size: 1rem;
-    font-weight: 500; }
-  main .about-us div h2 {
-    font-size: 1.5rem;
-    margin: 0 1.5rem; }
-  main .about-us div img {
-    width: 150px;
-    margin: 2.5rem 1.5rem; }
+      align-content: center; }
+      header .ul-links li a {
+        display: block;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #282829;
+        text-transform: uppercase;
+        text-align: center; }
+        header .ul-links li a:hover {
+          filter: brightness(1.4); }
+    header .ul-links ul {
+      position: absolute;
+      width: 100%;
+      bottom: 20px;
+      padding: 0 7rem; }
+      header .ul-links ul li a i {
+        text-decoration: none;
+        font-size: 3rem; }
+  main .container {
+    width: 100%; }
+  main .first-section {
+    background-size: cover;
+    background-position: right center; }
+    main .first-section .bg-filter h1 {
+      font-size: 2rem; }
+    main .first-section .bg-filter p {
+      width: 80%;
+      font-size: 1.4rem; }
+    main .first-section .bg-filter div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem; }
+      main .first-section .bg-filter div a:nth-child(1n) {
+        padding: 0.5rem 2rem;
+        font-size: 1rem; }
+      main .first-section .bg-filter div a:nth-child(2n) {
+        text-align: center;
+        padding: 0.5rem;
+        max-width: 100%; }
+  main .recycle-section {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+    main .recycle-section h2 {
+      font-size: 1.2rem; }
+    main .recycle-section ul li {
+      overflow: visible; }
+      main .recycle-section ul li img {
+        width: 100px; }
+      main .recycle-section ul li p {
+        font-size: 1rem;
+        font-weight: 500; }
+  main .about-us {
+    justify-content: center; }
+    main .about-us div h2 {
+      font-size: 1.5rem;
+      margin-top: 8.5rem;
+      margin-left: 1.5rem; }
+    main .about-us div img {
+      width: 150px;
+      margin-top: 8.5rem;
+      margin-right: 1.5rem; }
+    main .about-us .about-us-p {
+      flex-direction: column;
+      max-width: 90%; }
   main .about-us-banner .about-us-element div img {
     width: 120px; }
   main .about-us-banner .about-us-element div p {
@@ -614,16 +705,80 @@ main .banner-section {
   main .location iframe {
     width: 90%;
     height: 400px; }
-  main .banner-section .bg-filter .container h3 {
-    margin-left: 0.5rem; }
-  main .banner-section .bg-filter .container div {
-    gap: 1rem;
-    margin: 0 1rem; }
-    main .banner-section .bg-filter .container div img {
-      width: 150px; }
-    main .banner-section .bg-filter .container div ul li {
-      font-size: 1.2rem;
-      margin-bottom: 1rem; }
-  main .banner-section .bg-filter .container h4 {
+  main .banner-section .bg-filter .container {
+    flex-direction: center; }
+    main .banner-section .bg-filter .container h3 {
+      margin-left: 0.5rem; }
+    main .banner-section .bg-filter .container div {
+      gap: 1rem;
+      margin: 0 1rem; }
+      main .banner-section .bg-filter .container div img {
+        width: 150px; }
+      main .banner-section .bg-filter .container div ul li {
+        font-size: 1.2rem;
+        margin-bottom: 1rem; }
+    main .banner-section .bg-filter .container h4 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-left: 0.5rem; }
+  footer .container .footer-one {
+    width: 100%; } }
+
+@media (max-width: 390px) {
+  header #boton-flotante {
+    font-size: 2.5rem; }
+  header nav a img {
+    width: 150px; }
+  main .first-section .bg-filter h1 {
     font-size: 1.5rem;
-    margin-left: 0.5rem; } }
+    font-weight: 900; }
+  main .first-section .bg-filter p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem; }
+  main .recycle-section {
+    gap: 0; }
+    main .recycle-section h2 {
+      font-size: 1rem; }
+    main .recycle-section ul li img {
+      width: 90px;
+      margin: 0 1rem; }
+    main .recycle-section ul li p {
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin: 0 0rem; }
+  main .about-us div {
+    flex-direction: column; }
+    main .about-us div h2 {
+      margin: 0;
+      margin-top: 3.5rem;
+      order: 2; }
+    main .about-us div img {
+      margin: 0;
+      margin-top: 3.5rem; }
+  main .about-us-banner .about-us-element {
+    padding: 3rem 0;
+    flex-direction: column; }
+    main .about-us-banner .about-us-element div:nth-child(2n) {
+      translate: 0;
+      width: 90%; }
+    main .about-us-banner .about-us-element div img {
+      width: 100px; }
+    main .about-us-banner .about-us-element div p {
+      text-align: center;
+      margin-bottom: 2rem;
+      width: 50%; }
+  main .location h2 {
+    font-size: 1.5rem; }
+  main .location iframe {
+    border-radius: 10px; }
+  main .banner-section .bg-filter .container {
+    align-items: center; }
+    main .banner-section .bg-filter .container h3 {
+      font-size: 1.5rem; }
+    main .banner-section .bg-filter .container div ul li {
+      font-size: 1rem; }
+    main .banner-section .bg-filter .container h4 {
+      padding: 0 3rem;
+      font-weight: 700; }
+  main .contact-section .container h2 {
+    font-size: 1.5rem; } }

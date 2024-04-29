@@ -7,7 +7,7 @@ main{
         .bg-filter{
             height: 100%;
             width: 100%;
-            padding: 15em 0;
+            padding: 15rem 0;
             background-color: rgba(86, 66, 61, 0.795);
             .container{     
                 @include flex(column,center,flex-start,1.5rem);

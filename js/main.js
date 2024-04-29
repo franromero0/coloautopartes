@@ -6,4 +6,16 @@ window.addEventListener('scroll', function() {
       botonFlotante.style.display = 'none'; // Oculta el botón
     }
   });
+  document.addEventListener('DOMContentLoaded', function() {
+    var menuLinks = document.querySelectorAll('.ul-links a');
+    var menuCheckbox = document.getElementById('menu_hamburguesa');
+
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            menuCheckbox.checked = false;
+        });
+    });
+});
+
+
   

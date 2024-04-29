@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="mobile-hide">
             <a href=""><img src="./assets/img/logo.png" alt="logotipo de la marca ColoAutopartes"></a> 
             <ul>
                 <li><a href="#top">Inicio</a></li>
@@ -23,9 +23,27 @@
             </ul>
         </nav>
         <a id="boton-flotante" href="https://wa.link/vueorv"><i class="fa-brands fa-square-whatsapp"></i></a>
+        <div class="desktop-hide">   
+            <label for="menu_hamburguesa">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="#top"><img src="./assets/img/logo.png" alt=""></a>    
+            <input class="menu-hamburguesa"type="checkbox" id="menu_hamburguesa">
+            <ul class="ul-links bg-filter" >
+                <li><a href="#top">Inicio</a></li>
+                <li><a href="#about-us">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#location">Donde estamos</a></li>
+                <li><a href="#contact">Contacto</a></li> 
+                <ul>
+                    <li><a href="https://www.instagram.com/coloautopartes/" ><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://wa.link/vueorv" ><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+            
+        </div>
     </header>
     <main>
-        <section class="first-section" >
+        <section class="first-section" id="menu-links">
             <div class="bg-filter">
                 <h1>Lorem, ipsum dolor. <br><span>albos dolor</span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dignissimos.</p>
@@ -53,7 +71,7 @@
                         <p>plástico, vidrio y <br> madera </p></li>
                     <li>
                         <img src="./assets/img/recycle-section/luces.webp" alt="icono de figurativo dando alusion a la goma espuma y los radiadores que se reciclan en la planta recicladora de autopartes">
-                        <p>goma espuma <br>y radiadores</p></li>
+                        <p>goma espuma y radiadores</p></li>
                     <li>
                         <img src="./assets/img/recycle-section/tornillo.webp" alt="icono de tornillo haciendo alusión al acero que se recicla en la planta recicladora de autopartes">
                         <p>acero</p></li>
