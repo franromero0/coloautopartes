@@ -666,7 +666,8 @@ main .banner-section {
       list-style: none;
       flex-wrap: nowrap;
       background-color: rgba(255, 255, 255, 0.137);
-      backdrop-filter: blur(10px); }
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px); }
       header .ul-links li {
         width: 100%;
         height: 100%;
@@ -696,7 +697,8 @@ main .banner-section {
     background-size: cover;
     background-position: right center; }
     main .first-section .bg-filter {
-      backdrop-filter: blur(5px); }
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(50px); }
       main .first-section .bg-filter h1 {
         font-size: 1.5rem;
         font-weight: 900; }
