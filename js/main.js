@@ -29,15 +29,14 @@ window.onscroll = function() {
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
-  if (window.innerWidth >= 768) { // Solo en dispositivos de escritorio
-    if (prevScrollPos > currentScrollPos) {
-      document.getElementById("header").style.top = "0";
-    } else {
-      document.getElementById("header").style.top = "-40px";
-    }
+  if (prevScrollPos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.top = "-40px"; // Cambiado a -40px para mantener consistencia con el valor en el else
   }
   prevScrollPos = currentScrollPos;
 }
+
 window.addEventListener('scroll', function() {
   var header = document.querySelector('header');
   var scrollPosition = window.scrollY;
@@ -48,6 +47,11 @@ window.addEventListener('scroll', function() {
       header.style.backgroundImage = "none"; // Vuelve a eliminar el fondo cuando el scroll es menor a la cantidad determinada
   }
 });
+
+
+
+
+
 
 
 
