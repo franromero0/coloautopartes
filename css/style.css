@@ -698,7 +698,7 @@ main .banner-section {
     background-position: right center; }
     main .first-section .bg-filter {
       backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(50px); }
+      -webkit-backdrop-filter: blur(5px); }
       main .first-section .bg-filter h1 {
         font-size: 1.5rem;
         font-weight: 900; }
