@@ -53,7 +53,9 @@ body {
   position: absolute;
   border-radius: 50%;
   top: 50%;
-  left: 50%; }
+  left: 50%;
+  margin-left: -24px;
+  margin-top: -24px; }
 
 .loader::after {
   opacity: 0;
@@ -252,11 +254,12 @@ main .recycle-section {
       main .recycle-section ul li img {
         width: 150px;
         background-color: white;
-        border-radius: 100px;
+        border-radius: 100%;
         margin-bottom: 0.5rem; }
       main .recycle-section ul li p {
         text-transform: uppercase;
-        font-weight: 600; }
+        font-weight: 600;
+        height: 50px; }
 
 main .about-us {
   display: flex;
@@ -692,12 +695,12 @@ main .banner-section {
         max-width: 100%; }
   main .recycle-section {
     justify-content: center;
-    align-items: center;
-    gap: 1rem; }
+    align-items: center; }
     main .recycle-section h2 {
       font-size: 1.2rem; }
     main .recycle-section ul li {
-      overflow: visible; }
+      overflow: visible;
+      margin-top: 0; }
       main .recycle-section ul li img {
         width: 100px; }
       main .recycle-section ul li p {

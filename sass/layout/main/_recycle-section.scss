@@ -24,12 +24,13 @@ main{
                 img{
                     width: 150px;
                     background-color: white;
-                    border-radius: 100px;
+                    border-radius: 100%;
                     margin-bottom: 0.5rem;
                 }
                 p{
                     text-transform: uppercase;
                     font-weight: 600;
+                    height: 50px;
                     
                 }
             }
