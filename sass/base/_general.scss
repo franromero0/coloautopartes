@@ -28,5 +28,15 @@ body{
 .hidden{
     overflow: hidden;
 }
+::-webkit-scrollbar {
+    width: 5px; 
+}
+::-webkit-scrollbar-track {
+    background-color:$brown-light; 
+}
+::-webkit-scrollbar-thumb {
+    background-color:$brown-color;
+    border-radius: 50px;
+}
 
 
