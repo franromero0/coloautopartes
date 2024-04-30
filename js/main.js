@@ -65,6 +65,20 @@ window.addEventListener('scroll', function() {
       header.style.backgroundImage = "none";
   }
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const menuCheckbox = document.querySelector('.menu-hamburguesa');
+  const header = document.getElementById('header');
+
+  menuCheckbox.addEventListener('change', function() {
+      if (menuCheckbox.checked) {
+          header.style.backgroundImage = "linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56)";
+          document.body.classList.add('hidden'); // Agrega la clase hidden
+      } else {
+          document.body.classList.remove('hidden'); // Quita la clase hidden
+      }
+  });
+});
+
 
 
 

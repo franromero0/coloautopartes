@@ -22,6 +22,9 @@ body {
 .desktop-hide {
   display: none; }
 
+.hidden {
+  overflow: hidden; }
+
 .loader-container {
   position: fixed;
   top: 0;
@@ -146,11 +149,11 @@ footer {
           font-weight: 100;
           width: 100%;
           margin-bottom: 0.5rem; }
-          footer .container .footer-one ul li:hover, footer .container .footer-one ul li a:hover {
-            color: black;
-            cursor: pointer; }
           footer .container .footer-one ul li i, footer .container .footer-one ul li a i {
             margin-right: 0.5rem; }
+        footer .container .footer-one ul li a:hover {
+          color: black;
+          cursor: pointer; }
   footer .signature {
     width: 100%;
     align-content: center;
@@ -628,7 +631,7 @@ main .banner-section {
     header .menu-hamburguesa:checked + .ul-links {
       height: calc(100vh - 50px);
       padding-top: 3rem;
-      padding-bottom: 10rem; }
+      padding-bottom: 20rem; }
     header .list-icon {
       cursor: pointer; }
     header .ul-links {
@@ -665,7 +668,7 @@ main .banner-section {
       header .ul-links ul {
         position: absolute;
         width: 100%;
-        bottom: 80px;
+        bottom: 150px;
         padding: 0 7rem; }
         header .ul-links ul li a i {
           text-decoration: none;
