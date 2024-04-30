@@ -793,15 +793,17 @@ main .banner-section {
     font-size: 2.5rem; }
   header nav a img {
     width: 150px; }
-  main .first-section .bg-filter h1 {
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin-top: 30vh; }
-  main .first-section .bg-filter p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem; }
-  main .first-section .bg-filter div a:nth-child(2n) {
-    margin-bottom: 3rem; }
+  main .first-section .bg-filter {
+    backdrop-filter: blur(2px); }
+    main .first-section .bg-filter h1 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-top: 30vh; }
+    main .first-section .bg-filter p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem; }
+    main .first-section .bg-filter div a:nth-child(2n) {
+      margin-bottom: 3rem; }
   main .recycle-section {
     gap: 0; }
     main .recycle-section h2 {
