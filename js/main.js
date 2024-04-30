@@ -1,9 +1,17 @@
+document.addEventListener('DOMContentLoaded', function() {
+  // Detectar cuando la página está completamente cargada
+  window.addEventListener('load', function() {
+      // Ocultar el loader
+      document.querySelector('.loader-container').style.display = 'none';
+  });
+});
+
 window.addEventListener('scroll', function() {
     var botonFlotante = document.getElementById('boton-flotante');
-    if (window.scrollY > 100) { // Cambia 100 al valor de scroll deseado
-      botonFlotante.style.display = 'block'; // Muestra el botón
+    if (window.scrollY > 100) { 
+      botonFlotante.style.display = 'block'; 
     } else {
-      botonFlotante.style.display = 'none'; // Oculta el botón
+      botonFlotante.style.display = 'none'; 
     }
   });
 document.addEventListener('DOMContentLoaded', function() {
@@ -32,19 +40,29 @@ window.onscroll = function() {
   if (prevScrollPos > currentScrollPos) {
     document.getElementById("header").style.top = "0";
   } else {
-    document.getElementById("header").style.top = "-40px"; // Cambiado a -40px para mantener consistencia con el valor en el else
+    document.getElementById("header").style.top = "-40px"; 
   }
   prevScrollPos = currentScrollPos;
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const menuCheckbox = document.querySelector('.menu-hamburguesa');
+    const header = document.getElementById('header');
+
+    menuCheckbox.addEventListener('change', function() {
+        if (menuCheckbox.checked) {
+            header.style.backgroundImage = "linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56)";
+        } 
+    });
+});
 
 window.addEventListener('scroll', function() {
   var header = document.querySelector('header');
   var scrollPosition = window.scrollY;
 
-  if (scrollPosition > 1) { // Cambia 100 por la cantidad de scroll en px en la que deseas cambiar el fondo del encabezado
+  if (scrollPosition > 1) { 
       header.style.backgroundImage = "linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56)";
   } else {
-      header.style.backgroundImage = "none"; // Vuelve a eliminar el fondo cuando el scroll es menor a la cantidad determinada
+      header.style.backgroundImage = "none";
   }
 });
 

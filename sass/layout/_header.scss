@@ -3,9 +3,8 @@ header{
     top: 0px;
     width: 100%;
     height: auto;
-    z-index: 999;
-    transition: 0.7s;
-    
+    z-index: 100;
+    transition: 0.7s;  
     #boton-flotante {
         display: none; /* Inicialmente oculto */
         position: fixed;
