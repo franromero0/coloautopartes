@@ -114,6 +114,7 @@
             background-size: cover;
             background-position: right center;
             .bg-filter{
+                backdrop-filter: blur(2px);
                 h1{
                     font-size: 1.5rem;
                     font-weight: 900;
@@ -289,7 +290,7 @@
         .first-section{
             
             .bg-filter{
-                backdrop-filter: blur(2px);
+                
                 h1{
                     font-size: 1.5rem;
                     font-weight: 900;
