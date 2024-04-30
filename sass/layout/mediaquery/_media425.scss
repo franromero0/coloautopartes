@@ -45,7 +45,7 @@
         .menu-hamburguesa:checked + .ul-links{
             height: calc(100vh - 50px);
             padding-top: 3rem;
-            padding-bottom: 20rem;   
+            padding-bottom: 17rem;   
         }
         
         .list-icon {
@@ -92,7 +92,7 @@
                 position: absolute;
                 width: 100%;
                 bottom: 150px;
-                padding: 0 7rem;
+                padding: 0 5rem;
                 li{
                     a{
                         i{
