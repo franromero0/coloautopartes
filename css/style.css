@@ -697,7 +697,8 @@ main .banner-section {
     justify-content: center;
     align-items: center; }
     main .recycle-section h2 {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      margin-bottom: 4rem; }
     main .recycle-section ul li {
       overflow: visible;
       margin-top: 0; }
