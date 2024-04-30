@@ -8,13 +8,14 @@
         .first-section{
             background-image: url("../assets/img/first-section/foto-predio.webp");
             background-size: cover;
-            .bg-filter{
-                
+           
+            .bg-filter{                   
                 h1{
-                    font-size: 3rem;
+                    font-size: 2rem;
+                    width: 90%;
                 }
                 p{
-                    font-size: 1.7rem;
+                    font-size: 1.5rem;
                 }
                 div{
                     a:nth-child(1n){
@@ -22,6 +23,7 @@
                     }
                     a:nth-child(2n) {
                         padding: 1rem 1rem;
+                        
                     }
                 }
             }

@@ -115,11 +115,13 @@
             background-position: right center;
             .bg-filter{
                 h1{
-                    font-size: 2rem;
+                    font-size: 1.5rem;
+                    font-weight: 900;
                 }
                 p{
-                    width: 80%;
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
+                    margin-bottom: 1rem;
+                    width: 90%
                 }
                 div{
                     @include flex(column, center,flex-start, 1rem);
@@ -286,6 +288,7 @@
     main{
         .first-section{
             .bg-filter{
+                justify-content: flex-end;
                 h1{
                     font-size: 1.5rem;
                     font-weight: 900;
@@ -294,6 +297,12 @@
                     font-size: 1.2rem;
                     margin-bottom: 1rem;
                 }
+                div{
+                    a:nth-child(2n){
+                        margin-bottom: 3rem;
+                    }
+                }
+
             }
         }
         .recycle-section{

@@ -12,6 +12,7 @@ html{
     font-weight: map-get($font-general,fontweight);
     color: map-get($font-general, fontcolor);
     font-style: normal;
+    scroll-behavior:smooth;
 }
 body{
     width: 100%;

@@ -8,8 +8,10 @@ main{
         top: 0;
         z-index: 10;
         aspect-ratio: 16/9;
+        background-color: $brown-light;
         background-image: url("../assets/img/first-section/foto-predio-extend.webp");
         background-size: 120%;
+        background-repeat: no-repeat;
         height: 100vh;
         width: 100%;
         background-position: left center;
@@ -20,16 +22,18 @@ main{
             background-color: rgba(154, 136, 132, 0.6);
             @include flex(column, center, flex-start, 0);
             h1{
-                font-size: 4rem;
+                font-size: 2.5rem;
                 font-weight: bold;
                 margin-left: 5%;
-                span{
+                margin-bottom: 3rem;
+                width: 60%;
+                &::first-line{
                     color: $brown-color;
                     font-weight: 800;
-                }  
+                } 
             }
             p{
-                font-size: 2rem;
+                font-size: 1.5rem;
                 width: 65%;
                 color: white;
                 font-weight: 300;
