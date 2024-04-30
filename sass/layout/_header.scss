@@ -19,7 +19,6 @@ header{
             transition: all 0.3s ease
         }
     }
-    
     nav{
         @include flex(column, center, center, 0.5rem);
         padding-top: 0.5rem;
