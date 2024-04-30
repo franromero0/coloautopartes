@@ -479,7 +479,8 @@ main .contact-section {
       main .contact-section .container a p {
         font-size: 1.5rem;
         font-weight: 600;
-        color: white; }
+        color: white;
+        text-align: center; }
         main .contact-section .container a p:nth-last-child(2) {
           font-size: 1rem;
           font-weight: 300;

@@ -34,6 +34,8 @@ main{
                     font-size: 1.5rem;
                     font-weight: 600;
                     color: $white-color;
+                    text-align: center;
+                    
                     &:nth-last-child(2){
                         font-size: 1rem;
                         font-weight: 300;
@@ -53,6 +55,7 @@ main{
                         font-weight: 300;
                         text-transform: uppercase;
                     }
+                    
                 }
             }
             
