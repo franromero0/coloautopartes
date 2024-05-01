@@ -205,28 +205,27 @@ main .slide-arrow {
 main .slide-left {
   margin-left: 10px;
   padding: 5rem 0.5rem;
-  background-color: rgba(255, 255, 255, 0.137);
   border-radius: 5px;
-  font-size: 1.5rem;
-  color: #282829; }
+  font-size: 2rem;
+  color: #282829;
+  transition: all 0.2s; }
   main .slide-left:hover {
-    background-color: rgba(255, 255, 255, 0.4); }
+    background-color: rgba(255, 255, 255, 0.2); }
 
 main .slide-right {
   right: 10px;
   padding: 5rem 0.5rem;
-  background-color: rgba(255, 255, 255, 0.137);
   border-radius: 5px;
-  font-size: 1.5rem;
-  color: #56423D; }
+  font-size: 2rem;
+  color: #56423D;
+  transition: all 0.2s; }
   main .slide-right:hover {
-    background-color: rgba(255, 255, 255, 0.4); }
+    background-color: rgba(255, 255, 255, 0.2); }
 
 main .first-section {
   top: 0;
   z-index: 10;
   aspect-ratio: 16/9;
-  background-color: #9A8884;
   background-image: url("../assets/img/first-section/foto-predio-extend.webp");
   background-size: 120%;
   background-repeat: no-repeat;
@@ -939,11 +938,15 @@ main .banner-section {
     font-size: 2.5rem; }
   header nav a img {
     width: 150px; }
+  main .slide-arrow {
+    position: absolute;
+    top: 53.5%;
+    transform: translateY(-53.5%); }
   main .slide-left {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-left: 5px; }
   main .slide-right {
-    font-size: 0.8rem;
+    font-size: 1rem;
     right: 5px; }
   main .first-section .bg-filter {
     align-items: center; }
