@@ -13,19 +13,41 @@
                 h1{
                     font-size: 2rem;
                     width: 90%;
+                    margin-bottom: 1rem;
                 }
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1rem;
+                    margin-bottom: 2rem;
                 }
                 div{
                     a:nth-child(1n){
-                        padding: 1rem 3.5rem;
+                        padding: 0.5rem 3.5rem;
+                        font-size: 1rem;
+                        
                     }
                     a:nth-child(2n) {
-                        padding: 1rem 1rem;
+                        padding: 0.5rem 1rem;
+                        font-size: 1rem;
                         
                     }
                 }
+            }
+        }
+        .second-section{         
+            .bg-filter{                   
+                h2{
+                    font-size: 2rem;
+                    width: 90%;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    font-size: 1rem;
+                    margin-bottom: 1rem;          
+                    width: 100%;
+                }
+                a{                 
+                        padding: 0.5rem 3.5rem;          
+                    }
             }
         }
         .recycle-section{

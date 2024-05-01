@@ -22,6 +22,7 @@ body{
     margin: auto;
     overflow: hidden;
 }
+
 .desktop-hide{
     display: none;
 }
@@ -38,5 +39,20 @@ body{
     background-color:$brown-color;
     border-radius: 50px;
 }
+//animaciones
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 

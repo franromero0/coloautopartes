@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Colo Autopartes - Recicladora de autopartes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta property="og:title" content="Colo Autopartes">
@@ -16,13 +18,11 @@
     <meta property="og:description" content="¡Reciclamos autopartes y te ofrecemos los mejores precios del mercado! Encuentra lo que necesitas para tu vehículo y ahorra con nosotros.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://i.imgur.com/1Vd79EI.png">
-
 </head>
 <body>
     <div class="loader-container">
         <span class="loader"></span>
-    </div>
-    
+    </div>   
     <header id="header">
         <nav class="mobile-hide">
             <a href=""><img src="./assets/img/logo.png" alt="logotipo de la marca ColoAutopartes"></a> 
@@ -48,25 +48,44 @@
                 <li><a href="#location">Donde estamos</a></li>
                 <li><a href="#contact">Contacto</a></li> 
                 <ul>
-                    <li><a href="https://www.instagram.com/coloautopartes/" ><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://wa.link/vueorv" ><i class="fa-brands fa-whatsapp"></i></a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100081019797890"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/coloautopartes/" target="_blank" ><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://wa.link/vueorv" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100081019797890" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
             </ul>
             
         </div>
     </header>
     <main id="main">
-        <section class="first-section" id="menu-links">
-            <div class="bg-filter">
-                <h1> Recicladora de Vehículos en Córdoba: Repuestos Automotrices de Calidad</h1>
-                
-                <p>En Colo Autopartes garantizamos la fiabilidad que necesitas. <br><b>¡Descubre cómo podemos ayudarte!</b></p>
-                <div>
-                    <a href="#contact">contactanos</a>
-                    <a href="#about-us">quienes somos</a>    
+        <section class="slider">
+            <div class="slider--inner">
+                <div class="slide"> 
+                    <div class="first-section" >
+                    <div class="bg-filter">
+                        <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200"> Recicladora de Vehículos en Córdoba: Repuestos Automotrices de Calidad</h1>
+                        
+                        <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300" >En Colo Autopartes garantizamos la fiabilidad que necesitas. <br><b>¡Descubre cómo podemos ayudarte!</b></p>
+                        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" >
+                            <a href="#contact">contactanos</a>
+                            <a href="#about-us">quienes somos</a>    
+                        </div>
+                        
+        
+                    </div>
                 </div>
-                
-
+            </div>
+                <div class="slide"> 
+                    <div class="second-section">
+                <div class="bg-filter">
+                        <p data-aos="fade-up" data-aos-anchor-placement="top-bottom"  >calidad en servicio y productos</p>
+                        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom"  >
+                            Conoce Nuestro Punto de Venta
+                        </h2 >
+                        
+                        
+                            <a href="#location" > <i class="fa-solid fa-location-dot"></i>Donde estamos</a>                          
+                        
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -186,22 +205,22 @@
             <div class="container">
                 <h2>contacto</h2>
                 <div class="line"></div>
-                <a href="https://wa.link/vueorv">
+                <a href="https://wa.link/vueorv" target="_blank">
                     <i class="fa-solid fa-phone"></i>
                 <p>telefono</p>
                 <p>+(549) 351-2416053</p>
                 </a>
-                <a href="https://www.instagram.com/coloautopartes/">
+                <a href="https://www.instagram.com/coloautopartes/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 <p >instagram</p>
                 <p>@coloautopartes</p>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100081019797890">
+                <a href="https://www.facebook.com/profile.php?id=100081019797890" target="_blank">
                     <i class="fa-brands fa-facebook"></i>
                 <p>facebook</p>
                 <p>Colo Autopartes</p>
                 </a>
-                <a href="https://gmail.com/">
+                <a href="https://gmail.com/" target="_blank">
                     <i class="fa-regular fa-envelope"></i>
                     <p >e-mail</p>
                     <p>coloautopartessas@gmail.com</p>
@@ -241,9 +260,9 @@
             <div class="footer-one">
                 <h4>contacto</h4>
                     <ul>
-                        <li><a href="https://wa.link/vueorv"><i class="fa-brands fa-whatsapp"></i>+(549) 351-2416053</a></li>
-                        <li><a href="https://www.instagram.com/coloautopartes/"><i class="fa-brands fa-instagram"></i>@coloautopartes</a></li>
-                        <li><a href="https://www.facebook.com/profile.php?id=100081019797890"><i class="fa-brands fa-facebook"></i>Colo Autopartes</a></li>
+                        <li><a href="https://wa.link/vueorv" target="_blank"><i class="fa-brands fa-whatsapp"></i>+(549) 351-2416053</a></li>
+                        <li><a href="https://www.instagram.com/coloautopartes/" target="_blank"><i class="fa-brands fa-instagram"></i>@coloautopartes</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100081019797890" target="_blank"><i class="fa-brands fa-facebook"></i>Colo Autopartes</a></li>
                         <li><i class="fa-regular fa-envelope"></i>coloautopartessas@gmail.com</li>
                     </ul>
                     <ul>
@@ -271,5 +290,9 @@
         </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

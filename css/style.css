@@ -36,6 +36,16 @@ body {
   background-color: #56423D;
   border-radius: 50px; }
 
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease forwards; }
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .loader-container {
   position: fixed;
   top: 0;
@@ -81,10 +91,9 @@ header {
   width: 100%;
   height: auto;
   z-index: 100;
-  transition: 0.7s; }
+  transition: 0.3s; }
   header #boton-flotante {
     display: none;
-    /* Inicialmente oculto */
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -180,6 +189,19 @@ footer {
           color: white;
           opacity: 0.1; }
 
+main .slider {
+  overflow: hidden; }
+
+main .slider--inner {
+  display: flex;
+  transition: all 0.3s ease-in; }
+
+main .slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover; }
+
 main .first-section {
   top: 0;
   z-index: 10;
@@ -194,14 +216,14 @@ main .first-section {
   main .first-section .bg-filter {
     width: 100%;
     height: 100%;
-    background-color: rgba(154, 136, 132, 0.6);
+    background-color: rgba(154, 136, 132, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 0; }
     main .first-section .bg-filter h1 {
-      font-size: 3.3rem;
+      font-size: 3rem;
       font-weight: bold;
       margin-left: 5%;
       margin-bottom: 3rem;
@@ -209,7 +231,7 @@ main .first-section {
       main .first-section .bg-filter h1::first-line {
         color: #56423D;
         font-weight: 800;
-        text-shadow: 0.5px 0.5px 0.5px black; }
+        text-shadow: 0.2px 0.2px 0.2px black; }
     main .first-section .bg-filter p {
       font-size: 1.5rem;
       width: 65%;
@@ -222,8 +244,8 @@ main .first-section {
       main .first-section .bg-filter div a:nth-child(1n) {
         background-color: #56423D;
         color: white;
-        border: 1px solid #56423D;
-        padding: 1rem 7rem;
+        border: 2px solid #56423D;
+        padding: 0.5rem 7rem;
         text-transform: uppercase;
         text-decoration: none;
         border-radius: 70px;
@@ -235,13 +257,69 @@ main .first-section {
           transition: all 0.3s ease; }
       main .first-section .bg-filter div a:nth-child(2n) {
         background-color: transparent;
-        border: 1px solid #56423D;
+        border: 2px solid #56423D;
         color: #56423D;
-        padding: 1rem 2.5rem; }
+        padding: 0.5rem 2.5rem; }
         main .first-section .bg-filter div a:nth-child(2n):hover {
           background-color: #56423D;
           color: white;
           transition: all 0.3s ease; }
+
+main .second-section {
+  top: 0;
+  z-index: 10;
+  aspect-ratio: 16/9;
+  background-color: #9A8884;
+  background-image: url("../assets/img/first-section/predio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: left center; }
+  main .second-section .bg-filter {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(154, 136, 132, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
+    main .second-section .bg-filter h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      width: 100%;
+      text-align: center;
+      font-weight: 800;
+      color: white;
+      letter-spacing: 1px; }
+    main .second-section .bg-filter p {
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+      width: 70%;
+      text-align: center;
+      color: #282829;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 5px; }
+    main .second-section .bg-filter a {
+      background-color: #282829;
+      color: white;
+      border: 2px solid #282829;
+      padding: 0.5rem 5rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 70px;
+      font-size: 1rem;
+      font-weight: 600; }
+      main .second-section .bg-filter a:hover {
+        background-color: transparent;
+        border: 2px solid #282829;
+        color: #282829;
+        transition: all 0.3s ease; }
+      main .second-section .bg-filter a i {
+        margin-right: 0.5rem; }
 
 main .recycle-section {
   background-color: #9A8884;
@@ -481,7 +559,8 @@ main .contact-section {
         font-size: 1.5rem;
         font-weight: 600;
         color: white;
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 0.5rem; }
         main .contact-section .container a p:nth-last-child(2) {
           font-size: 1rem;
           font-weight: 300;
@@ -552,13 +631,27 @@ main .banner-section {
     background-size: cover; }
     main .first-section .bg-filter h1 {
       font-size: 2rem;
-      width: 90%; }
+      width: 90%;
+      margin-bottom: 1rem; }
     main .first-section .bg-filter p {
-      font-size: 1.5rem; }
+      font-size: 1rem;
+      margin-bottom: 2rem; }
     main .first-section .bg-filter div a:nth-child(1n) {
-      padding: 1rem 3.5rem; }
+      padding: 0.5rem 3.5rem;
+      font-size: 1rem; }
     main .first-section .bg-filter div a:nth-child(2n) {
-      padding: 1rem 1rem; }
+      padding: 0.5rem 1rem;
+      font-size: 1rem; }
+  main .second-section .bg-filter h2 {
+    font-size: 2rem;
+    width: 90%;
+    margin-bottom: 1rem; }
+  main .second-section .bg-filter p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 100%; }
+  main .second-section .bg-filter a {
+    padding: 0.5rem 3.5rem; }
   main .recycle-section h2 {
     font-size: 1.5rem; }
   main .recycle-section ul {
@@ -663,7 +756,7 @@ main .banner-section {
       flex-direction: column;
       justify-content: center;
       overflow: hidden;
-      transition: all .3s;
+      transition: all .2s;
       list-style: none;
       flex-wrap: nowrap;
       background-color: rgba(255, 255, 255, 0.137);
@@ -697,29 +790,40 @@ main .banner-section {
   main .first-section {
     background-size: cover;
     background-position: right center; }
-    main .first-section .bg-filter {
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px); }
-      main .first-section .bg-filter h1 {
-        font-size: 1.5rem;
-        font-weight: 900; }
-      main .first-section .bg-filter p {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-        width: 90%; }
-      main .first-section .bg-filter div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 1rem; }
-        main .first-section .bg-filter div a:nth-child(1n) {
-          padding: 0.5rem 2rem;
-          font-size: 1rem; }
-        main .first-section .bg-filter div a:nth-child(2n) {
-          text-align: center;
-          padding: 0.5rem;
-          max-width: 100%; }
+    main .first-section .bg-filter h1 {
+      font-size: 1.5rem;
+      font-weight: 900; }
+    main .first-section .bg-filter p {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+      width: 90%; }
+    main .first-section .bg-filter div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.3rem; }
+      main .first-section .bg-filter div a:nth-child(1n) {
+        padding: 0.5rem 2rem;
+        font-size: 0.8rem; }
+      main .first-section .bg-filter div a:nth-child(2n) {
+        text-align: center;
+        padding: 0.5rem;
+        max-width: 100%; }
+  main .second-section {
+    background-size: cover;
+    background-position: center center; }
+    main .second-section .bg-filter h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      width: 100%; }
+    main .second-section .bg-filter p {
+      font-size: 0.6rem;
+      margin-bottom: 1rem;
+      width: 100%; }
+    main .second-section .bg-filter a {
+      padding: 0.3rem 1rem;
+      font-size: 0.6rem; }
   main .recycle-section {
     justify-content: center;
     align-items: center; }
@@ -800,14 +904,21 @@ main .banner-section {
   header nav a img {
     width: 150px; }
   main .first-section .bg-filter h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 900;
     margin-top: 30vh; }
   main .first-section .bg-filter p {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     margin-bottom: 1rem; }
   main .first-section .bg-filter div a:nth-child(2n) {
     margin-bottom: 3rem; }
+  main .second-section .bg-filter h2 {
+    font-size: 1.3rem;
+    font-weight: 700; }
+  main .second-section .bg-filter p {
+    font-size: 0.3rem; }
+  main .second-section .bg-filter a {
+    margin-bottom: 2rem; }
   main .recycle-section {
     gap: 0; }
     main .recycle-section h2 {

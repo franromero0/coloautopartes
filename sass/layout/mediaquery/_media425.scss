@@ -62,7 +62,7 @@
             flex-direction: column;
             justify-content: center; 
             overflow: hidden;
-            transition: all .3s;
+            transition: all .2s;
             list-style: none;
             flex-wrap: nowrap;
             background-color: rgba(255, 255, 255, 0.137);
@@ -115,28 +115,47 @@
             background-size: cover;
             background-position: right center;
             .bg-filter{
-                backdrop-filter: blur(5px);
-                -webkit-backdrop-filter: blur(5px);
                 h1{
                     font-size: 1.5rem;
                     font-weight: 900;
                 }
                 p{
-                    font-size: 1.2rem;
+                    font-size: 0.8rem;;
                     margin-bottom: 1rem;
                     width: 90%
                 }
                 div{
-                    @include flex(column, center,flex-start, 1rem);
+                    @include flex(column, center,flex-start, 0.3rem);
                     a:nth-child(1n){
                         padding: 0.5rem 2rem;
-                        font-size: 1rem;
+                        font-size: 0.8rem;
                     }
                     a:nth-child(2n){
                         text-align: center;
                         padding: 0.5rem;
                         max-width: 100%;
                     }
+                }
+            }
+        }
+        .second-section{
+            background-size: cover;
+            background-position: center center;
+            .bg-filter{
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: 800;
+                    width: 100%;
+                }
+                p{
+                    font-size: 0.6rem;
+                    margin-bottom: 1rem;
+                    width: 100%
+                }
+                a{
+                    
+                        padding: 0.3rem 1rem;
+                        font-size: 0.6rem;          
                 }
             }
         }
@@ -294,20 +313,36 @@
             .bg-filter{
                 
                 h1{
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                     font-weight: 900;
                     margin-top: 30vh;
                 }
                 p{
-                    font-size: 1.2rem;
+                    font-size: 0.7rem;;
                     margin-bottom: 1rem;
                 }
                 div{
                     a:nth-child(2n){
                         margin-bottom: 3rem;
+                        
                     }
                 }
 
+            }
+        }
+        .second-section{        
+            .bg-filter{      
+                h2{
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 0.3rem;
+                    
+                }
+                a{
+                        margin-bottom: 2rem;    
+                }
             }
         }
         .recycle-section{
