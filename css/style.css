@@ -788,8 +788,10 @@ main .banner-section {
     background-size: cover;
     background-position: right center; }
     main .first-section .bg-filter h1 {
+      font-size: 1.5rem;
       font-weight: 900; }
     main .first-section .bg-filter p {
+      font-size: 1rem;
       margin-bottom: 1rem;
       width: 90%; }
     main .first-section .bg-filter div {
@@ -799,7 +801,8 @@ main .banner-section {
       align-items: flex-start;
       gap: 0.3rem; }
       main .first-section .bg-filter div a:nth-child(1n) {
-        padding: 0.5rem 2rem; }
+        padding: 0.5rem 2rem;
+        font-size: 0.8rem; }
       main .first-section .bg-filter div a:nth-child(2n) {
         text-align: center;
         padding: 0.5rem 1rem;
@@ -808,13 +811,16 @@ main .banner-section {
     background-size: cover;
     background-position: center center; }
     main .second-section .bg-filter h2 {
+      font-size: 2.2rem;
       font-weight: 800;
       width: 100%; }
     main .second-section .bg-filter p {
+      font-size: 1rem;
       margin-bottom: 1rem;
       width: 100%; }
     main .second-section .bg-filter a {
-      padding: 0.3rem 1rem; }
+      padding: 0.3rem 1rem;
+      font-size: 1rem; }
   main .recycle-section {
     justify-content: center;
     align-items: center; }
@@ -913,7 +919,10 @@ main .banner-section {
       main .first-section .bg-filter div a:nth-child(2n) {
         margin-bottom: 3rem; }
   main .second-section .bg-filter h2 {
+    font-size: 1.5rem;
     font-weight: 700; }
+  main .second-section .bg-filter p {
+    font-size: 1rem; }
   main .second-section .bg-filter a {
     margin-bottom: 2rem; }
   main .recycle-section {
