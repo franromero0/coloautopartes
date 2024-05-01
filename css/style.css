@@ -193,6 +193,35 @@ main .slide {
   height: 100vh;
   background-size: cover; }
 
+main .slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10; }
+
+main .slide-left {
+  margin-left: 10px;
+  padding: 5rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.137);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #282829; }
+  main .slide-left:hover {
+    background-color: rgba(255, 255, 255, 0.4); }
+
+main .slide-right {
+  right: 10px;
+  padding: 5rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.137);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #56423D; }
+  main .slide-right:hover {
+    background-color: rgba(255, 255, 255, 0.4); }
+
 main .first-section {
   top: 0;
   z-index: 10;
@@ -620,6 +649,14 @@ main .banner-section {
 @media (max-width: 1300px) {
   header #boton-flotante {
     font-size: 4rem; }
+  main .slide-left {
+    background-color: transparent; }
+    main .slide-left:hover {
+      background-color: transparent; }
+  main .slide-right {
+    background-color: transparent; }
+    main .slide-right:hover {
+      background-color: transparent; }
   main .first-section {
     background-image: url("../assets/img/first-section/foto-predio.webp");
     background-size: cover; }
@@ -756,9 +793,7 @@ main .banner-section {
       -webkit-transition: all 0.2s ease;
       list-style: none;
       flex-wrap: nowrap;
-      background-color: rgba(255, 255, 255, 0.137);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px); }
+      background-color: rgba(154, 136, 132, 0.97); }
       header .ul-links li {
         width: 100%;
         height: 100%;
@@ -784,6 +819,10 @@ main .banner-section {
           font-size: 3rem; }
   main .container {
     width: 100%; }
+  main .slide-left {
+    font-size: 1rem; }
+  main .slide-right {
+    font-size: 1rem; }
   main .first-section {
     background-size: cover;
     background-position: right center; }
@@ -900,6 +939,12 @@ main .banner-section {
     font-size: 2.5rem; }
   header nav a img {
     width: 150px; }
+  main .slide-left {
+    font-size: 0.8rem;
+    margin-left: 5px; }
+  main .slide-right {
+    font-size: 0.8rem;
+    right: 5px; }
   main .first-section .bg-filter {
     align-items: center; }
     main .first-section .bg-filter h1 {

@@ -101,40 +101,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 });
-// Funcion para ver si está en safari 9 donde el fondo del menú mobile está con backdrop-filter y no es compatible.
-document.addEventListener('DOMContentLoaded', function() {
-  const menuCheckbox = document.querySelector('.menu-hamburguesa');
-  const header = document.getElementById('header');
 
-  menuCheckbox.addEventListener('change', function() {
-      if (menuCheckbox.checked) {
-          header.style.backgroundImage = "linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56)";
-          setHeaderBackground(); 
-          document.body.classList.add('hidden'); 
-      } else {
-          header.addEventListener('transitionend', function(event) {
-              if (event.propertyName === 'background-image') {
-                  document.body.classList.remove('hidden'); // Quita la clase hidden
-              }
-          });
-          header.style.backgroundImage = "none"; // Restablece el fondo a su estado original
-      }
-  });
+// // Funcion para ver si está en safari 9 donde el fondo del menú mobile está con backdrop-filter y no es compatible.
+// document.addEventListener('DOMContentLoaded', function() {
+//   const menuCheckbox = document.querySelector('.menu-hamburguesa');
+//   const header = document.getElementById('header');
 
-  function setHeaderBackground() {
-      // Verifica si el navegador admite backdrop-filter
-      if (!supportsBackdropFilter()) {
-          header.style.backgroundColor = "rgba(255, 255, 255, 0.5)"; // Cambiar el color de fondo si backdrop-filter no es compatible
-      }
-  }
+//   menuCheckbox.addEventListener('change', function() {
+//       if (menuCheckbox.checked) {
+//           header.style.backgroundImage = "linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56)";
+//           setHeaderBackground(); 
+//           document.body.classList.add('hidden'); 
+//       } else {
+//           header.addEventListener('transitionend', function(event) {
+//               if (event.propertyName === 'background-image') {
+//                   document.body.classList.remove('hidden'); // Quita la clase hidden
+//               }
+//           });
+//           header.style.backgroundImage = "none"; // Restablece el fondo a su estado original
+//       }
+//   });
 
-  // Función para verificar si el navegador admite backdrop-filter
-  function supportsBackdropFilter() {
-      const testElem = document.createElement('div');
-      testElem.style.backdropFilter = 'blur(10px)';
-      return testElem.style.backdropFilter === 'blur(10px)';
-  }
-});
+//   function setHeaderBackground() {
+//       // Verifica si el navegador admite backdrop-filter
+//       if (!supportsBackdropFilter()) {
+//           header.style.backgroundColor = "rgba(255, 255, 255, 0.5)"; // Cambiar el color de fondo si backdrop-filter no es compatible
+//       }
+//   }
+
+//   // Función para verificar si el navegador admite backdrop-filter
+//   function supportsBackdropFilter() {
+//       const testElem = document.createElement('div');
+//       testElem.style.backdropFilter = 'blur(10px)';
+//       return testElem.style.backdropFilter === 'blur(10px)';
+//   }
+// });
 
 // Slider Home
 let sliderInner = document.querySelector(".slider--inner");
@@ -171,6 +172,7 @@ sliderInner.addEventListener('touchend', () => {
                 index++;
                 if (index >= slides.length) index = 0;
             }
+            updateSlider();
         }
         sliderInner.style.transform = `translateX(${index * -100}%)`;
     }
@@ -205,10 +207,36 @@ sliderInner.addEventListener('mouseup', () => {
                 index++;
                 if (index >= slides.length) index = 0;
             }
+            updateSlider();
         }
         sliderInner.style.transform = `translateX(${index * -100}%)`;
     }
     isDragging = false;
+});
+
+// Función para actualizar la posición del slider
+function updateSlider() {
+    sliderInner.style.transform = `translateX(${index * -100}%)`;
+}
+
+// Event listener para el botón de desplazamiento hacia la izquierda
+document.querySelectorAll('.slide-left').forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (index > 0) {
+            index--;
+            updateSlider();
+        }
+    });
+});
+
+// Event listener para el botón de desplazamiento hacia la derecha
+document.querySelectorAll('.slide-right').forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (index < slides.length - 1) {
+            index++;
+            updateSlider();
+        }
+    });
 });
 
 // Cambia de sección 
@@ -220,7 +248,7 @@ setInterval(function () {
         }
         sliderInner.style.transform = `translateX(${index * -100}%)`;
     }
-}, 10000);
+}, 13000);
 
 
 
