@@ -117,11 +117,11 @@
             background-position: right center;
             .bg-filter{
                 h1{
-                    font-size: 1.5rem;
+                    
                     font-weight: 900;
                 }
                 p{
-                    font-size: 1rem;;
+                    
                     margin-bottom: 1rem;
                     width: 90%
                 }
@@ -129,7 +129,7 @@
                     @include flex(column, center,flex-start, 0.3rem);
                     a:nth-child(1n){
                         padding: 0.5rem 2rem;
-                        font-size: 0.8rem;
+                        
                     }
                     a:nth-child(2n){
                         text-align: center;
@@ -144,20 +144,20 @@
             background-position: center center;
             .bg-filter{
                 h2{
-                    font-size: 2.2rem;
+                    
                     font-weight: 800;
                     width: 100%;
                     
                 }
                 p{
-                    font-size: 1rem;
+                    
                     margin-bottom: 1rem;
                     width: 100%
                 }
                 a{
                     
                         padding: 0.3rem 1rem;
-                        font-size: 1rem;          
+                                 
                 }
             }
         }
@@ -315,14 +315,14 @@
             .bg-filter{
                     align-items: center;
                 h1{
-                    font-size: 1.5rem;
+                    
                     font-weight: 900;
                     max-width: 90%;
                     text-align: center;
                     margin-left: 0;
                 }
                 p{
-                    font-size: 1rem;;
+                   
                     margin-bottom: 1rem;
                     text-align: center;
                     margin-left: 0;
@@ -344,13 +344,10 @@
         .second-section{        
             .bg-filter{      
                 h2{
-                    font-size: 1.5rem;
+                    
                     font-weight: 700;
                 }
-                p{
-                    font-size: 1rem;
-                    
-                }
+             
                 a{
                         margin-bottom: 2rem; 
                         
