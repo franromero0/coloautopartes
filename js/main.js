@@ -220,7 +220,7 @@ setInterval(function () {
         }
         sliderInner.style.transform = `translateX(${index * -100}%)`;
     }
-}, 7000);
+}, 10000);
 
 
 
