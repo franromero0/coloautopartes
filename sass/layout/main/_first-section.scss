@@ -10,6 +10,7 @@ main{
     .slider--inner {
         display: flex;
         transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
     }
     
     .slide {
@@ -71,6 +72,7 @@ main{
                         background-color: transparent; 
                         color: $brown-color;
                         transition: all 0.3s ease;
+                        -webkit-transition: all 0.3s ease;
                     }
                 }
                 a:nth-child(2n){
@@ -82,6 +84,7 @@ main{
                         background-color: $brown-color; 
                         color: $white-color;
                         transition: all 0.3s ease;
+                        -webkit-transition: all 0.3s ease;
                     }
                 }
             }        
@@ -140,6 +143,7 @@ main{
                     border: 2px solid $dark-color ;
                     color: $dark-color;
                     transition: all 0.3s ease;
+                    -webkit-transition: all 0.3s ease;
                 }
                 i{
                     margin-right: 0.5rem;

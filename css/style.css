@@ -36,16 +36,6 @@ body {
   background-color: #56423D;
   border-radius: 50px; }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeInAnimation 1s ease forwards; }
-
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
 .loader-container {
   position: fixed;
   top: 0;
@@ -194,7 +184,8 @@ main .slider {
 
 main .slider--inner {
   display: flex;
-  transition: all 0.3s ease-in; }
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in; }
 
 main .slide {
   flex-shrink: 0;
@@ -254,7 +245,8 @@ main .first-section {
         main .first-section .bg-filter div a:nth-child(1n):hover {
           background-color: transparent;
           color: #56423D;
-          transition: all 0.3s ease; }
+          transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease; }
       main .first-section .bg-filter div a:nth-child(2n) {
         background-color: transparent;
         border: 2px solid #56423D;
@@ -263,7 +255,8 @@ main .first-section {
         main .first-section .bg-filter div a:nth-child(2n):hover {
           background-color: #56423D;
           color: white;
-          transition: all 0.3s ease; }
+          transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease; }
 
 main .second-section {
   top: 0;
@@ -317,7 +310,8 @@ main .second-section {
         background-color: transparent;
         border: 2px solid #282829;
         color: #282829;
-        transition: all 0.3s ease; }
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease; }
       main .second-section .bg-filter a i {
         margin-right: 0.5rem; }
 
@@ -757,6 +751,7 @@ main .banner-section {
       justify-content: center;
       overflow: hidden;
       transition: all .2s;
+      -webkit-transition: all 0.2s ease;
       list-style: none;
       flex-wrap: nowrap;
       background-color: rgba(255, 255, 255, 0.137);
