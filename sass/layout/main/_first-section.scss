@@ -46,7 +46,9 @@ main{
                     color: $brown-color;
                     font-weight: 800;
                     text-shadow: 0.2px 0.2px 0.2px black;
-                } 
+                }
+                 
+                
             }
             p{
                 font-size: 1.5rem;
@@ -66,7 +68,7 @@ main{
                     text-transform: uppercase;
                     text-decoration: none;
                     border-radius: 70px;
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     font-weight: 600;
                     &:hover{
                         background-color: transparent; 
@@ -118,14 +120,14 @@ main{
                 letter-spacing: 1px; 
             }
             p{
-                font-size: 1rem;
+                font-size: 1.5rem;
                 margin-bottom: 0.8rem;
                 width: 70%;
                 text-align: center;
                 color: $dark-color;
                 font-weight: 600;
                 text-transform: uppercase;
-                letter-spacing: 5px;
+                letter-spacing: 17px;
                 
             }
             a{            
@@ -136,7 +138,7 @@ main{
                 text-transform: uppercase;
                 text-decoration: none;
                 border-radius: 70px;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 font-weight: 600;
                 &:hover{
                     background-color: transparent;

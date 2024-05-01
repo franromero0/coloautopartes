@@ -121,7 +121,7 @@
                     font-weight: 900;
                 }
                 p{
-                    font-size: 0.8rem;;
+                    font-size: 1rem;;
                     margin-bottom: 1rem;
                     width: 90%
                 }
@@ -133,7 +133,7 @@
                     }
                     a:nth-child(2n){
                         text-align: center;
-                        padding: 0.5rem;
+                        padding: 0.5rem 1rem;
                         max-width: 100%;
                     }
                 }
@@ -144,19 +144,20 @@
             background-position: center center;
             .bg-filter{
                 h2{
-                    font-size: 1.5rem;
+                    font-size: 2.2rem;
                     font-weight: 800;
                     width: 100%;
+                    
                 }
                 p{
-                    font-size: 0.6rem;
+                    font-size: 1rem;
                     margin-bottom: 1rem;
                     width: 100%
                 }
                 a{
                     
                         padding: 0.3rem 1rem;
-                        font-size: 0.6rem;          
+                        font-size: 1rem;          
                 }
             }
         }
@@ -312,19 +313,28 @@
         .first-section{
             
             .bg-filter{
-                
+                    align-items: center;
                 h1{
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     font-weight: 900;
-                    margin-top: 30vh;
+                    max-width: 90%;
+                    text-align: center;
+                    margin-left: 0;
                 }
                 p{
-                    font-size: 0.7rem;;
+                    font-size: 1rem;;
                     margin-bottom: 1rem;
+                    text-align: center;
+                    margin-left: 0;
                 }
                 div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 0;
                     a:nth-child(2n){
                         margin-bottom: 3rem;
+                          
                         
                     }
                 }
@@ -334,15 +344,16 @@
         .second-section{        
             .bg-filter{      
                 h2{
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     font-weight: 700;
                 }
                 p{
-                    font-size: 0.3rem;
+                    font-size: 1rem;
                     
                 }
                 a{
-                        margin-bottom: 2rem;    
+                        margin-bottom: 2rem; 
+                        
                 }
             }
         }
