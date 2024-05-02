@@ -70,7 +70,7 @@ window.addEventListener('scroll', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const menuCheckbox = document.querySelector('.menu-hamburguesa');
     const header = document.getElementById('header');
-    const originalBackground = header.style.backgroundImage; // Guardamos el fondo original
+    
 
     menuCheckbox.addEventListener('change', function() {
         if (menuCheckbox.checked) {
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     menuItems.forEach(function(item) {
         item.addEventListener('click', function() {
             menuCheckbox.checked = false; 
-            header.style.backgroundImage = originalBackground; // Restaura el fondo original
+            header.style.backgroundImage = "linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56)";// Restaura el fondo original
             document.body.classList.remove('hidden'); 
         });
     });
