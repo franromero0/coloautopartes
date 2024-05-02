@@ -44,7 +44,7 @@ window.onscroll = function() {
   }
   prevScrollPos = currentScrollPos;
 }
-//
+
 document.addEventListener('DOMContentLoaded', function() {
     const menuCheckbox = document.querySelector('.menu-hamburguesa');
     const header = document.getElementById('header');
@@ -68,39 +68,43 @@ window.addEventListener('scroll', function() {
 });
 // Funcion para cuando el usuario toque el menú no pueda scrollear.
 document.addEventListener('DOMContentLoaded', function() {
-  const menuCheckbox = document.querySelector('.menu-hamburguesa');
-  const header = document.getElementById('header');
+    const menuCheckbox = document.querySelector('.menu-hamburguesa');
+    const header = document.getElementById('header');
+    const originalBackground = header.style.backgroundImage; // Guardamos el fondo original
 
-  menuCheckbox.addEventListener('change', function() {
-      if (menuCheckbox.checked) {
-          header.style.backgroundImage = "linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56)";
-          document.body.classList.add('hidden'); // Agrega la clase hidden
-      } else {
-          header.addEventListener('transitionend', function(event) {
-              if (event.propertyName === 'background-image') {
-                  document.body.classList.remove('hidden'); // Quita hidden
-              }
-          });
-          header.style.backgroundImage = "none"; // fondo a su estado original
-      }
-  });
+    menuCheckbox.addEventListener('change', function() {
+        if (menuCheckbox.checked) {
+            header.style.backgroundImage = "linear-gradient(to top, #9a8884, #9a8884, #9a8884, #9a8884, #9a8884, #94827e, #8e7c77, #887671, #7b6963, #6f5b56)";
+            document.body.classList.add('hidden'); // Agrega la clase hidden
+        } else {
+            header.addEventListener('transitionend', function(event) {
+                if (event.propertyName === 'background-image') {
+                    document.body.classList.remove('hidden'); // Quita hidden
+                }
+            });
+            header.style.backgroundImage = originalBackground; // Restaura el fondo original
+        }
+    });
 
-  // event listener para cada opción del menú para ver cuando presiona una opcion de las sections.
-  const menuItems = document.querySelectorAll('.ul-links');
-  menuItems.forEach(function(item) {
-      item.addEventListener('click', function() {
-          menuCheckbox.checked = false; 
-          header.style.backgroundImage = "none"; 
-          document.body.classList.remove('hidden'); 
-      });
-  });
-  // funcion para ver si toca de nuevo el boton de menú y quitar la clase hidden
-  menuCheckbox.addEventListener('change', function() {
-    if (!menuCheckbox.checked) {
-        document.body.classList.remove('hidden'); 
-    }
+    // event listener para cada opción del menú para ver cuando presiona una opcion de las sections.
+    const menuItems = document.querySelectorAll('.ul-links');
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            menuCheckbox.checked = false; 
+            header.style.backgroundImage = originalBackground; // Restaura el fondo original
+            document.body.classList.remove('hidden'); 
+        });
+    });
+
+    // funcion para ver si toca de nuevo el boton de menú y quitar la clase hidden
+    menuCheckbox.addEventListener('change', function() {
+        if (!menuCheckbox.checked) {
+            document.body.classList.remove('hidden'); 
+            header.style.backgroundImage = originalBackground; // Restaura el fondo original
+        }
+    });
 });
-});
+
 
 // // Funcion para ver si está en safari 9 donde el fondo del menú mobile está con backdrop-filter y no es compatible.
 // document.addEventListener('DOMContentLoaded', function() {
